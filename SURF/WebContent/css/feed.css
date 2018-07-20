@@ -1,0 +1,257 @@
+*{
+font-family: sans-serif;
+}
+
+body {
+   background-color: gray;
+   margin: 0px;
+}
+
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+.topdiv {
+   position: fixed;
+   width: 100%;
+   height: 50px;
+   background-color: white;
+   margin: 0px auto;
+   border-bottom: 1px solid #C3C3C3;
+}
+
+.divmain {
+   width: 80%;
+   height: auto;
+   min-height: 760px;
+   background-color: #E9E7E7;
+   float: left;
+   text-align:center; /* div 틀 항상 가운데 정렬  */
+   overflow: auto; 
+   
+}
+
+input[type=button],input[type=submit] {
+   border-radius:4px;
+   border :0 ;
+   color:white;
+   background-color: #067da1;
+   cursor: pointer;
+}
+textarea {
+   font-family: sans-serif; /* 글 업로드 글씨체 설정 */
+}
+
+textarea::placeholder {  /*크롬 플레이스홀더  색상 지정*/
+    color: lightgray;
+}
+
+
+input[type=button]:hover,input[type=submit]:hover {
+   border-radius:4px;
+   border :0 ;
+   color: black;
+   background-color: #067da1;
+   cursor: pointer;
+}
+
+.divfriend { /* 오른쪽 친구 창 전체 */
+   position: fixed;
+   width: 20%;
+   height: auto;
+   min-height: 760px;
+   background-color: #EAEAEA;
+   margin-left: 80%;
+   margin-top: 50px;
+   border-top: 1px solid #C3C3C3;
+   border-left: 1px solid #C3C3C3;
+}
+.friendnmessage{  /* 오른쪽 친구 밑부분 */
+   border-top: 1px solid #C3C3C3 ;
+   height: auto;
+   min-height: 30px;
+}
+
+
+
+
+.myinfo {
+   width:800px;
+   height: auto;
+   min-height: 420px;
+/*    margin-left : 12%;
+ */   background-color: white;
+   margin-bottom: 10px;
+   display:inline-block; /* div를 글자처럼 취급  -> text-align center 사용을 위함 */
+   text-align:left; /* div 안의 내용은 왼쪽정렬  */
+}
+
+
+
+
+.divmain .divmain-content {
+   width:650px;
+   height: auto;
+   min-height: 210px;
+   background-color: white;
+   margin-top: 50px;
+   border-bottom: 1px solid #C3C3C3;
+   margin-bottom: 10px;
+   display:inline-block; /* div를 글자처럼 취급  -> text-align center 사용을 위함 */
+   text-align:left; /* div 안의 내용은 왼쪽정렬  */
+   
+}
+
+
+.divmain .divmain-content .divmain-content-top {
+   width: 100%;
+   height: 100px;
+}
+
+.divmain .divmain-content .divmain-content-mid {
+   width: 80%;
+   height: auto;
+   min-height: 60px;
+   padding:0 0 0 35px;
+   	word-break:break-all;
+   
+   
+   
+}
+
+.mid-icon {
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   border: 1px solid #EAEAEA;
+   text-align: center;
+   cursor: pointer;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+
+
+.divmain-content-bottom{
+width: 100%;
+   height: auto;
+   min-height: 50px;
+   background-color: #F6F6F6;
+}
+.pf { /* 프로필 사진 크기 지정 */
+   border-radius: 50%;
+   height: 50px;
+   width: 50px;
+   background-color: #EAEAEA;
+   background-size :100%;
+   background-position:center; 
+   background-repeat : no-repeat;
+   margin-left: 35px;
+   margin-top: 40px;
+   float: left;
+}
+
+#pf {
+   background-image : url(../img/profile.png);
+
+}
+
+
+.namedate {
+   width: 150px;
+   height: 50px;
+   margin-left: 15px;
+   float: left;
+   margin-top: 40px;
+}
+
+.icon {
+   width: 30px;
+   height: 30px;
+   float: right;
+   margin-top: 45px;
+   font-size: 20px;
+   text-align: center;
+   color: #D5D5D5;
+   margin-right: 20px;
+   cursor: pointer;
+}
+
+.icon:hover {
+   color: gray;
+   
+}
+
+.content {
+   position: relative;
+   width: 100%;
+   hegiht: auto;
+   min-height: 40px;
+   top: 100px;
+   right: 50px;
+}
+
+.replyinpt {
+   width: 80%;
+   height: 25px;
+   float: left;
+   margin-left: 40px;
+   margin-top: 10px;
+}
+
+.replybtn {
+   width: 10%;
+   height: 30px;
+   margin-top: 10px;
+   margin-left: 5px;
+}
+.texta{
+resize: none;
+font-size:15px ;
+border: 0px;
+margin-top: 25px ;
+
+}
+
+.texta:focus{    
+ outline: none; }
+ 
+.search:focus{
+   outline:none;
+} 
+
+.mid-icon:hover { /* 좋아요 호버시   */
+   border:  1px solid gray;
+   
+}
+
+.pic:hover {
+   background-color: #EAEAEA;
+}
+.cam:hover {
+   background-color: #EAEAEA;
+}
+.link:hover {
+   background-color: #EAEAEA;
+}
+
+
+
+
+
+@media (min-width: 500px)  {  /* 미디어 쿼리를 이용해 윈도우 창 변경에 따른 css 적용 */
+       
+}
+@media  (max-width: 550px) {
+      .search{
+      display: none;
+      }
+      .searchb{
+      display: none;
+      }
+   
+   
+         .divfriend{
+        display: none;
+        }
+}
